@@ -178,14 +178,4 @@
             audio.currentTime = 0 + Math.random() * (audio.duration + 1 -0)
         })
 
-        audio_btn.addEventListener('click', function() {
-            if(audio.muted) {
-                audio.muted = false
-                audio_icon.classList.add('fa-volume-up')
-                audio_icon.classList.remove('fa-volume-off')
-            } else if(!audio.muted) {
-                audio.muted = true
-                audio_icon.classList.add('fa-volume-off')
-                audio_icon.classList.remove('fa-volume-up')
-            }
-        })
+        
